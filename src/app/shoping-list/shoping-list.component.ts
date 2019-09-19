@@ -7,7 +7,11 @@ import { Ingridient } from '../shared/ingredients.model';
   styleUrls: ['./shoping-list.component.scss']
 })
 export class ShopingListComponent implements OnInit {
-  ingredients: Ingridient[] = [];
+  ingredients: Ingridient[] = [
+    new Ingridient('Apples', 5),
+    new Ingridient('Tomatoes', 10),
+
+  ];
   constructor() { }
 
   ngOnInit() {
