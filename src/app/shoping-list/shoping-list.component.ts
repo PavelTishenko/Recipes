@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Ingridient } from '../shared/ingredients.model';
 
 @Component({
   selector: 'app-shoping-list',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shoping-list.component.scss']
 })
 export class ShopingListComponent implements OnInit {
-
+  ingredients: Ingridient[] = [];
   constructor() { }
 
   ngOnInit() {
