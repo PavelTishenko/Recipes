@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Recipes';
+  onSelectedMenuEl: string;
+  selectedMenu($event) {
+   this.onSelectedMenuEl = $event;
+  }
 }
