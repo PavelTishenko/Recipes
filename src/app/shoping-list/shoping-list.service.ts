@@ -12,6 +12,7 @@ export class ShopingListService {
   getIngredients() {
     return this.ingredients.slice();
   }
+
   addIngrediant(ingredient: Ingridient) {
     this.ingredients.push(ingredient);
     this.ingerdientAdded.emit(this.ingredients.slice());

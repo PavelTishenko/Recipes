@@ -10,7 +10,6 @@ import { ShopingListService } from '../shoping-list.service';
 export class ShopingEditComponent implements OnInit {
   @ViewChild('name', { static: false }) name: ElementRef;
   @ViewChild('number', { static: false }) number: ElementRef;
-  // @Output() ingerdientAdded = new EventEmitter<Ingridient>();
 
   constructor(private shopingListService: ShopingListService) { }
 
@@ -21,7 +20,6 @@ export class ShopingEditComponent implements OnInit {
     const inpName = this.name.nativeElement.value;
     const inpNumber = this.number.nativeElement.value;
     const newIngredient = new Ingridient(inpName, inpNumber)
-    // this.ingerdientAdded.emit(newIngredient)
     this.shopingListService.addIngrediant(newIngredient);
   }
 }
